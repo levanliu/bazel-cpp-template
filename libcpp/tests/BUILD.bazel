@@ -1,0 +1,10 @@
+cc_test(
+    name = "hello_test",
+    size = "small",
+    srcs = ["hello_time_test.cpp"],
+    deps = [
+        "@googletest//:gtest",
+        "@googletest//:gtest_main",
+        "//libcpp:hello_time",
+    ],
+)

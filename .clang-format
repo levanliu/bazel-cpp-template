@@ -1,0 +1,11 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+# Merge functions defined inside a class and empty functions
+AllowShortFunctionsOnASingleLine: Inline
+# Not analyze the formatted file for the most common alignment of & and *
+DerivePointerAlignment: false
+# Sort each include block separately
+IncludeBlocks: Preserve
+# Set the maximum line length
+ColumnLimit: 100

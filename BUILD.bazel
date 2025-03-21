@@ -1,0 +1,6 @@
+# this is for configuaring clang-tidy
+filegroup(
+       name = "clang_tidy_config",
+       srcs = [".clang-tidy"],
+       visibility = ["//visibility:public"],
+)

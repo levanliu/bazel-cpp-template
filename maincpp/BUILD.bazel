@@ -1,0 +1,22 @@
+cc_library(
+    name = "hello_greet",
+    srcs = ["hello_greet.cpp"],
+    hdrs = ["include/hello_greet.hpp"],
+)
+
+cc_library(
+    name = "foo",
+    srcs = ["foo.cpp"],
+    hdrs = ["include/foo.hpp"],
+)
+
+
+cc_binary(
+    name = "hello_world",
+    srcs = ["main.cpp"],
+    deps = [
+        ":hello_greet",
+        ":foo",
+        "//libcpp:hello_time",
+    ],
+)
