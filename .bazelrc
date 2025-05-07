@@ -1,3 +1,5 @@
+build --action_env=CC=/opt/rh/gcc-toolset-12/root/bin/gcc
+build --action_env=CXX=/opt/rh/gcc-toolset-12/root/bin/g++
 # set c++ 14, enable all warning and extras
 build --action_env=BAZEL_CXXOPTS="-std=c++14:-Wall:-Wextra"
 
